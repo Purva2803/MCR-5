@@ -112,8 +112,7 @@ const RecipeApp = () => {
 
   return (
     <div>
-      <h1>Recipe App</h1>
-
+      
       <SearchForm
         searchCategory={searchCategory}
         setSearchCategory={setSearchCategory}

@@ -28,7 +28,9 @@ function App() {
             </header>
 
             <main>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/">
+                Recipe App
+              </NavLink>
 
             </main>
 
