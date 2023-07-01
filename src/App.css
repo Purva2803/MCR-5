@@ -95,3 +95,15 @@
 .modal button:active {
   background-color: #3c9039;
 }
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.recipe-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+}

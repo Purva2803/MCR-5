@@ -123,19 +123,22 @@ const RecipeApp = () => {
       />
 
       <ul>
+      <div className="recipe-list">
         {filteredRecipes.length > 0 ? (
           filteredRecipes.map((recipe, index) => (
-            <div key={index}>
-              <li>{recipe.name}</li>
-              <li>{recipe.ingredients}</li>
-              <li>{recipe.instructions}</li>
-              <li>{recipe.Cuisine}</li>
+            <div className="recipe-card" key={index}>
+              <h2>{recipe.name}</h2>
+              <h3>Ingredients: {recipe.ingredients}</h3>
+              <h3>Instructions: {recipe.instructions}</h3>
+              <h3>Cuisine Type: {recipe.Cuisine}</h3>
               <img src={recipe.image} alt="recipe" height="200" width="200" />
             </div>
           ))
         ) : (
           <li>No recipes found.</li>
         )}
+      </div>
+
       </ul>
 
       <button>
